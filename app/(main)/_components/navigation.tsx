@@ -26,9 +26,9 @@ import { useMediaQuery } from "usehooks-ts";
 
 import { DocumentList } from "./document-list";
 import { Item } from "./item";
+import { Navbar } from "./navbar";
 import { TrashBox } from "./trash-box";
 import { UserItem } from "./user-item";
-import { Navbar } from "./navbar";
 
 export const Navigation = () => {
   const settings = useSettings();
