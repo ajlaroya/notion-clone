@@ -30,7 +30,7 @@ export const TrashBox = () => {
 
   const onRestore = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
-    documentId: Id<"documents">
+    documentId: Id<"documents">,
   ) => {
     event.stopPropagation();
 
@@ -92,14 +92,14 @@ export const TrashBox = () => {
               <div
                 onClick={(event) => onRestore(event, document._id)}
                 role="button"
-                className="p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-sm cursor-pointer"
+                className="p-2 hover:bg-neutral-200 dark:hover:bg-neutral-600 rounded-sm cursor-pointer"
               >
                 <Undo className="h-4 w-4 text-muted-foreground" />
               </div>
               <ConfirmModal onConfirm={() => onRemove(document._id)}>
                 <div
                   role="button"
-                  className="p-2 hover:bg-neutral-200 dark:hover:bg-neutral-700 rounded-sm cursor-pointer"
+                  className="p-2 hover:bg-neutral-200 dark:hover:bg-neutral-600 rounded-sm cursor-pointer"
                 >
                   <Trash className="h-4 w-4 text-muted-foreground" />
                 </div>
